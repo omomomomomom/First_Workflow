@@ -1,16 +1,17 @@
-name: First Workflow
+name: Sample Workflow
 
 on:
   push:
+    branches:
+      - main
 
 jobs:
-  run-shell-commands:
+  build:
     runs-on: ubuntu-latest
-    steps:
-      - name: Echo a String
-        run: echo "Hello World"
 
-      - name: Multiline Commands
-        run: |
-          node --version
-          npm --version
+    steps:
+      - name: Print a Message
+        run: echo "Hello from GitHub Actions!"
+
+      - name: Check Node.js Version
+        run: node --version
