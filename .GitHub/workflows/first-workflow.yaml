@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: 14
 
-      - name: Install Dependencies
+      - name: Install Dependenciiiies
         run: npm install
 
   test:
