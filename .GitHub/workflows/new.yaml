@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Echo a String
-        run: echo "Hello World 121222"
+        run: echo "Hello World 1212000"
 
       - name: Multiline Commands
         run: |
