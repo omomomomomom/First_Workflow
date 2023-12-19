@@ -1,4 +1,4 @@
-name: First Workflow
+name: Workflow 2.0
 
 on:
   push:
@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Echo a String
-        run: echo "Hello World 111om222"
+        run: echo "Hello World 111om22222"
 
       - name: Multiline Commands
         run: |
