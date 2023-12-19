@@ -1,16 +1,20 @@
-name: First Workflow
+name: Dummy Workflow
 
 on:
   push:
+    branches:
+      - main
 
 jobs:
-  run-shell-commands:
+  dummy-job:
     runs-on: ubuntu-latest
-    steps:
-      - name: Echo a String
-        run: echo "Hello World 6000"
 
-      - name: Multiline Commands
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Print a Message
         run: |
-          node --version
-          npm --version
+          echo "Hello, this is a dummy workflow!"
+          echo "You can customize this workflow by adding more steps."
+
