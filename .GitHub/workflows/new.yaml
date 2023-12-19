@@ -1,0 +1,16 @@
+name: new
+
+on:
+  push:
+
+jobs:
+  run-shell-commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo a String
+        run: echo "Hello World 121222"
+
+      - name: Multiline Commands
+        run: |
+          node --version
+          npm --version
